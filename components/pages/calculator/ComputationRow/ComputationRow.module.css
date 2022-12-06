@@ -1,0 +1,26 @@
+.container {
+  height: var(--computation-row-height);
+  padding: 0.25rem 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name {
+  flex-grow: 1;
+}
+
+.value {
+  width: 48px;
+
+  text-align: end;
+}
+
+.exempt {
+  text-decoration: line-through;
+}
+
+.accent {
+  font-weight: 700;
+}

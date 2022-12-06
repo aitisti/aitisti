@@ -1,0 +1,76 @@
+.table {
+  margin-top: 1rem;
+  overflow: scroll;
+
+  width: 100%;
+  table-layout: fixed;
+}
+
+.table thead {
+  margin-top: 1rem;
+}
+
+.headRow {
+  height: 3rem;
+  text-align: left;
+}
+
+.bubble {
+  color: var(--purple-50);
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
+
+  border: 2px solid;
+  border-color: var(--purple-50);
+  border-radius: 1rem;
+
+  padding: 0.5rem;
+}
+
+.row {
+  height: 3rem;
+  font-size: 0.75rem;
+}
+
+.row td {
+  overflow: scroll;
+}
+
+.row td ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nameColumn {
+  width: 14%;
+}
+
+.typeColumn,
+.fieldsColumn {
+  width: 17%;
+}
+
+.locationsColumn {
+  width: 26%;
+}
+
+.techColumn {
+  width: 26%;
+}
+
+@media only screen and (max-width: 768px) {
+  .table {
+    display: none;
+  }
+}
+
+.nameColumn {
+  font-weight: 600;
+}

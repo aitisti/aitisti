@@ -1,0 +1,49 @@
+:root {
+  /* Colors */
+  --black: #101010;
+  --yellow: #e9a020;
+  --purple-100: #6e0ca5;
+  --purple-75: #7f3da5;
+  --purple-50: #916fa5;
+  --purple-black: #580e81;
+  --offwhite: #f0f0f0;
+  --purple-white: #f4f0f4;
+  --overlay-white: rgba(240, 240, 240, 0.9);
+
+  --header-height: 4rem;
+  --computation-row-height: 1.5rem;
+  --option-row-height: 2.5rem;
+
+  --side-padding: 10%;
+  --bottom-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  --around-box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+  --except-top-shadow: rgba(50, 50, 93, 0.25) 0 20px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+
+  /* z-index */
+  --z-footer: 0;
+  --z-main: 50;
+  --z-header: 100;
+  --z-mobile-overlay: 150;
+  --z-mobile-nav: 200;
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    --side-padding: 5%;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-base);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

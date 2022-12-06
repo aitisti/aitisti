@@ -1,0 +1,51 @@
+.group {
+  width: 100%;
+  height: 4rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title {
+  min-width: 100px;
+
+  font-weight: 600;
+}
+
+.group ul {
+  flex-grow: 1;
+
+  height: 100%;
+
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: scroll;
+}
+
+.group ul li {
+  color: var(--purple-50);
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
+
+  border: 2px solid;
+  border-color: var(--purple-50);
+  border-radius: 1rem;
+
+  padding: 0.5rem;
+
+  margin-right: 1rem;
+}
+
+.group ul li:hover {
+  color: var(--purple-75);
+  border-color: var(--purple-75);
+}

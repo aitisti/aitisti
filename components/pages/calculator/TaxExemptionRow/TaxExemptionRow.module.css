@@ -1,0 +1,12 @@
+.container {
+  height: var(--computation-row-height);
+  padding: 0.25rem 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox {
+  accent-color: var(--purple-100);
+}

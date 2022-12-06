@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  padding-top: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+@media only screen and (min-width: 513px) and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    display: none;
+  }
+}

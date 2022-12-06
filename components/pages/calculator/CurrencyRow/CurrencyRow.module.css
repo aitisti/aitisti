@@ -1,0 +1,17 @@
+.container {
+  width: 165px;
+  height: var(--option-row-height);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.currency {
+  text-align: start;
+}
+
+.rate {
+  width: 100px;
+  text-align: end;
+}

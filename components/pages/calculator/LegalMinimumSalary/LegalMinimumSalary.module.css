@@ -1,0 +1,38 @@
+.container {
+  min-height: var(--option-row-height);
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0.5rem 0;
+}
+
+.text {
+  margin-right: 5px;
+  max-width: 400px;
+}
+
+.value {
+  font-weight: 700;
+  text-align: end;
+}
+
+.back {
+  color: #ccc;
+  margin-left: 0.5rem;
+}
+
+.both {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (max-width: 532px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

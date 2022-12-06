@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+
+  padding: 1rem;
+
+  background-color: var(--offwhite);
+  height: var(--header-height);
+
+  box-shadow: var(--bottom-box-shadow);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  z-index: var(--z-header);
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--purple-100);
+  font-weight: 700;
+}
+
+.filler {
+  flex-grow: 1;
+}

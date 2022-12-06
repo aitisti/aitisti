@@ -1,0 +1,50 @@
+.hourly {
+  width: 66%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+
+  border: 1px solid #ddd;
+
+  color: #ccc;
+}
+
+.active {
+  border-color: var(--purple-100);
+
+  color: var(--black);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+
+  border-bottom: 1px solid #ccc;
+
+  height: 3rem;
+  padding: 0.25rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.radio {
+  height: 2.5rem;
+
+  margin: 0 0.5rem 0 0;
+  padding: 0;
+
+  accent-color: var(--purple-100);
+}
+
+.title {
+  line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .hourly {
+    min-width: 300px;
+    margin-left: 0.5rem;
+  }
+}

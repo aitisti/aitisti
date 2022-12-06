@@ -1,0 +1,62 @@
+.nav {
+  width: 80%;
+}
+
+.nav ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin: 0;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.children {
+  min-width: 130px;
+  position: absolute;
+
+  background-color: var(--offwhite);
+
+  padding: 0.5rem 0;
+
+  box-shadow: var(--except-top-shadow);
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 300ms, opacity 300ms linear;
+}
+
+.nav ul li:hover > .children {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav ul li a {
+  text-decoration: none;
+
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  padding: 0.5rem;
+
+  transition: color 200ms ease;
+}
+
+.nav ul li > .children > a {
+  font-size: 0.75rem;
+}
+
+.nav ul li a:hover {
+  color: var(--purple-100);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
