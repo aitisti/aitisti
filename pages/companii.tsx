@@ -8,8 +8,8 @@ import {
   CompanyLocation,
   CompanyField,
 } from '../types/CompanyModel';
-import { createClient } from 'contentful';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
+import contentfulClient from '../lib/contentful/client';
 
 const types = Object.values(CompanyType);
 const locations = Object.values(CompanyLocation);
@@ -27,12 +27,7 @@ const tech = [
 ];
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID ?? '',
-    accessToken: process.env.CONTENTFUL_DELIVERY_API_TOKEN ?? '',
-  });
-
-  const res = await client.getEntries({
+  const res = await contentfulClient.getEntries({
     content_type: 'company',
     order: 'fields.name',
   });

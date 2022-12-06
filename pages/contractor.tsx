@@ -1,18 +1,13 @@
 import Head from 'next/head';
 import Question from '../components/common/Question';
 import { InferGetStaticPropsType } from 'next';
-import { createClient } from 'contentful';
 import { QuestionModel } from '../types/QuestionModel';
 import { Document } from '@contentful/rich-text-types';
 import AccountantDisclaimer from '../components/common/AccountantDisclaimer';
+import contentfulClient from '../lib/contentful/client';
 
 export const getStaticProps = async () => {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID ?? '',
-    accessToken: process.env.CONTENTFUL_DELIVERY_API_TOKEN ?? '',
-  });
-
-  const res = await client.getEntries({
+  const res = await contentfulClient.getEntries({
     content_type: 'question',
     order: 'fields.priority',
     'fields.type[match]': 'Contractor',
