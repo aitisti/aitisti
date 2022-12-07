@@ -7,10 +7,11 @@ const DesktopNav = () => {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href="/intrebari">Întrebări</Link>
+          <Link href="/diverse">Diverse</Link>
           <div className={styles.children}>
             <Link href="/carti">Cărți</Link>
-            <Link href="/filme-seriale">Filme și seriale</Link>
+            <Link href="/filme-si-seriale">Filme și seriale</Link>
+            <Link href="/intrebari">Întrebări</Link>
           </div>
         </li>
         <li>
