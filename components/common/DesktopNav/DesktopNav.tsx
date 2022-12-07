@@ -8,6 +8,10 @@ const DesktopNav = () => {
       <ul>
         <li>
           <Link href="/intrebari">Întrebări</Link>
+          <div className={styles.children}>
+            <Link href="/carti">Cărți</Link>
+            <Link href="/filme-seriale">Filme și seriale</Link>
+          </div>
         </li>
         <li>
           <Link href="/contractor">Contractor</Link>

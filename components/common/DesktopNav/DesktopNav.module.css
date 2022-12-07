@@ -1,14 +1,12 @@
-.nav {
-  width: 80%;
-}
-
 .nav ul {
   list-style-type: none;
 
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 
   margin: 0;
+  padding: 0;
 }
 
 .nav ul li {
@@ -28,6 +26,9 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 300ms, opacity 300ms linear;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .nav ul li:hover > .children {
