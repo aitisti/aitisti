@@ -12,7 +12,11 @@ const Header = () => {
         <Link href="/">aitiști</Link>
       </div>
       <div className={styles.filler} />
-      <a href="https://github.com/aitisti/aitisti" target="_blank">
+      <a
+        href="https://github.com/aitisti/aitisti"
+        target="_blank"
+        rel="noreferrer"
+      >
         <Image src="/github-mark.png" alt="me" width="32" height="32" />
       </a>
       <DesktopNav />
