@@ -10,6 +10,12 @@ const nextConfig = {
         port: '',
         pathname: '/images/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.gr-assets.com',
+        port: '',
+        pathname: '/images/S/compressed.photo.goodreads.com/books/**',
+      },
     ],
   },
 };

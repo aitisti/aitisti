@@ -17,7 +17,7 @@ const Header = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <Image src="/github-mark.png" alt="me" width="32" height="32" />
+        <Image src="/github-mark.png" alt="github" width="32" height="32" />
       </a>
       <DesktopNav />
       <MobileNav />
